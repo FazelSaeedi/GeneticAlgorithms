@@ -1,5 +1,5 @@
 import datetime
-import genetic
+from guessPassword import genetic
 import unittest
 
 
