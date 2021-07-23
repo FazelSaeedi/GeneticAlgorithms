@@ -26,9 +26,11 @@ def get_fitness(guess):
 # Mutate
 
 def mutate(parent):
-    index = random.randrange(0 , len(parent))
-    childGenes = list(parent)
-    newGene , alternate = random.sample(geneSet , 2 )
+    index = random.randrange(0 , len(parent))                          # select random index from parent
+    childGenes = list(parent)                                          # convert cildString to List
+    newGene , alternate = random.sample(geneSet , 2 )                  # select 2 sample from geneSet
+                                                                       # if selected random index != selected first sample from geneSet
+                                                                       #   replace newGene otherwise replace alternate gene
     childGenes[index] = alternate \
         if newGene == childGenes[index] \
         else newGene
