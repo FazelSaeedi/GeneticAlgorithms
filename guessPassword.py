@@ -11,9 +11,9 @@ import datetime
 def generateParent(length):
     genes = []
     while len(genes) < length:
-        sampleSize = min(length - len(genes) , len(geneSet))
-        genes.extend(random.sample(geneSet , sampleSize))
-    return ''.join(genes)
+        sampleSize = min(length - len(genes) , len(geneSet))           # generate SampleSize
+        genes.extend(random.sample(geneSet , sampleSize))              # select as many random genes as SampleSize
+    return ''.join(genes)                                              # return a String
 
 
 
