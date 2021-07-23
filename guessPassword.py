@@ -19,9 +19,9 @@ def generateParent(length):
 
 # Fitness
 def get_fitness(guess):
-    return sum(1 for expected , actual in zip(target , guess)
-               if expected == actual)
-
+    return sum(1 for expected , actual in zip(target , guess)          # check which character is selected correctly
+               if expected == actual)                                  # return 1 if two character are equal and then return number of all equals
+                                                                       # e.g : if target = "ABCD" and guess is "ABD" get_fitness return 3 because A=A , B=B , D=D
 
 # Mutate
 
