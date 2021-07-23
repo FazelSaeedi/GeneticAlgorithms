@@ -40,9 +40,9 @@ def mutate(parent):
 # Display
 
 def display(guess):
-    timeD = datetime.datetime.now() - startTime
+    timeD = datetime.datetime.now() - startTime                       # calculate time of each iteration
     fitness = get_fitness(guess)
-    print("{0}\t{1}\t{2}".format(guess , fitness , str(timeD)))
+    print("{0}\t{1}\t{2}".format(guess , fitness , str(timeD)))       # illustrate information of each iteration
 
 
 # Genes
