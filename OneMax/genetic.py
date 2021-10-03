@@ -4,6 +4,7 @@ import time
 import sys
 
 
+
 class Chromosome:
     Genes = None
     Fitness = None
